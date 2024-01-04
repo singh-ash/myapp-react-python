@@ -1,4 +1,3 @@
-# save this as app.py
 import os
 import requests
 from flask import Flask, request
@@ -13,7 +12,7 @@ DEBUG = bool(os.environ.get("DEBUG", True))
 
 if not UNSPLASH_KEY:
     raise EnvironmentError(
-        "Please create .env.local file and inster there UNSPLASH_KEY"
+        "Please create .env.local file and insert there UNSPLASH_KEY"
     )
 app = Flask(__name__)
 CORS(app)
